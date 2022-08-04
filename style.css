@@ -1,0 +1,270 @@
+* {box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-image: url(./images/bg.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: 100%;
+}
+.btn.btn-outline-secondary{
+    color: white;
+    border-color: white;
+    border-radius: 40px;
+}
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.dreamshare {
+    margin-top: 25px;
+    margin-left: 50px;
+    color: white;
+    font-weight: 500;
+}
+.buttons {
+    margin-right: 50px;
+    margin-top: 25px;
+}
+.header-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    color: black;
+    }
+.btn.btn-danger{
+    border-radius: 40px;
+}
+
+/* PART 2 */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%!important; 
+    margin-top: 25px;
+
+}
+.step1, .step2, .step3 {
+    width: 30%;
+    height: 400px;
+    background-size: 100%;
+    }
+.step1{
+    background-image: url(./images/Step\ 1.png);
+}
+.step2 {
+    background-image: url(./images/step\ 2.png);
+    }
+.step3 {
+    background-image: url(./images/step\ 3.png);
+}
+
+/* PART 3 */
+.container2{
+    width: 70%;
+    display: flex;
+    padding: 25px;
+       
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-top: 30px;
+    text-align: center;
+    
+        }
+
+.image-icon{
+    position: relative;
+        }
+.icon{
+    position: absolute;
+    right: 2px;
+    bottom: 12px;
+    background-color: cornflowerblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: white solid 5px;
+    
+}
+.name{
+    font-weight: 700;
+}
+.btn.btn-outline-danger{
+    border-radius: 40px;
+}
+/* PART 4 */
+.container3{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.activity{
+    display: flex;
+    flex-direction: row;
+
+    }
+
+.activity img{
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form{
+    width: 500px;
+}
+
+#button-addon2{
+    display: block;
+    background-color: red;
+    border-radius: 40px;
+    margin-left: 5px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    border-top: red 1px solid;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.foot-block {
+    line-height: 10px;
+
+}
+.foot-block1 {
+    line-height: 10px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding: 0 0!important;
+            }
+    .step1, .step2, .step3 {
+            height: 200px!important;
+            background-size: 100%!important;
+            }    
+    }
+    .container2{
+        flex-wrap: wrap;
+    }
+    .user{
+        min-width: 50%;
+        
+    }
+    .container3{
+        padding-left: 2px;
+        padding-right: 2px;
+            }
+
+}
+
+@media (max-width: 320px) {
+    header{
+        width: 320px;
+        height: 150px;
+    }
+    .container{
+        width: 320px;
+        
+    }
+    .dreamshare{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .buttons{
+        margin-right: 5px;
+        margin-top: 5px;
+
+    }
+    .header-bottom {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px!important; 
+        margin-top: 25px;
+    
+    }
+    .step1, .step2, .step3 {
+        width: 100%;
+        background-size: 100%;
+        padding-bottom: 10px;
+        }
+    .container2{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+
+    }   
+    .container3{
+        width: 100%;
+        padding-left: 2px;
+        padding-right: 2px;
+        
+    } 
+    .activity{
+        display: flex;
+        flex-direction: column;
+    }
+    .activity img{
+        margin-right: 25px;
+        margin-top: 25px;
+        width: 300px;
+        height: 120px;
+    }
+    .create{
+        margin-top: 10px
+    }
+    .form{
+        width: 250px;
+
+    }
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    
+}
